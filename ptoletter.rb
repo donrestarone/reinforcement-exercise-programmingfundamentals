@@ -1,3 +1,8 @@
+
+puts "enter the percentage grade"
+pgrade = gets.chomp.to_i
+
+
 def lettergrade(percentage)
 	if percentage > 100
 		return false
@@ -14,5 +19,7 @@ def lettergrade(percentage)
 	
 		end
 	end 
+output = lettergrade(pgrade)
 
-	puts lettergrade(90).to_s
+
+	puts "the letter grade is #{output}"
